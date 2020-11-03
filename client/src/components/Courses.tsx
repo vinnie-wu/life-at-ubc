@@ -1,8 +1,9 @@
-import React from "react";
-import Title from "./Title";
-import styled from "styled-components";
-import { SectionWrapper } from "./Home";
-import TextField from "@material-ui/core/TextField";
+import React from 'react';
+import Title from './Title';
+import styled from 'styled-components';
+import { SectionWrapper } from './Home';
+import TextField from '@material-ui/core/TextField';
+import Fade from 'react-reveal/Fade';
 
 const Wrapper = styled.div`
   display: flex;
@@ -29,18 +30,20 @@ const CourseList = styled.div`
 function Courses() {
   return (
     <SectionWrapper>
-      <Title title="2. Add Courses"></Title>
-      <Wrapper>
-        <AddCourse>
-          <span style={{ fontSize: 30 }}>Course:</span>
-          <TextField
-            id="outlined-textarea"
-            variant="outlined"
-            style={{ width: 250, height: 50, marginLeft: 10 }}
-          />
-        </AddCourse>
-        <CourseList></CourseList>
-      </Wrapper>
+      <Fade up>
+        <Title title='2. Add Courses'></Title>
+        <Wrapper>
+          <AddCourse>
+            <span style={{ fontSize: 30 }}>Course:</span>
+            <TextField
+              id='outlined-textarea'
+              variant='outlined'
+              style={{ width: 250, height: 50, marginLeft: 10 }}
+            />
+          </AddCourse>
+          <CourseList></CourseList>
+        </Wrapper>
+      </Fade>
     </SectionWrapper>
   );
 }

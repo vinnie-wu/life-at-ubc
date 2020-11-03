@@ -1,11 +1,14 @@
-import React from "react";
-import { SectionWrapper } from "./Home";
-import Title from "./Title";
+import React from 'react';
+import { SectionWrapper } from './Home';
+import Title from './Title';
+import Fade from 'react-reveal/Fade';
 
 function Labs() {
   return (
     <SectionWrapper>
-      <Title title="5. Add Lab Sections"></Title>
+      <Fade up>
+        <Title title='5. Add Lab Sections'></Title>
+      </Fade>
     </SectionWrapper>
   );
 }

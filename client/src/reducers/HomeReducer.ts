@@ -1,11 +1,11 @@
-import { HomeActions, SWITCHCOMPONENT } from "../actions/HomeActions";
+import { HomeActions, SWITCHCOMPONENT } from '../actions/HomeActions';
 
 export interface HomeReducerProps {
   componentIndex: number;
 }
 
 const initialState: HomeReducerProps = {
-  componentIndex: 2,
+  componentIndex: 0,
 };
 
 export const HomeReducer = (
